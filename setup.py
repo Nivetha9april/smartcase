@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="smartcase",
-    version="0.1.0",
+    version="0.2.0",
     author="Nivetha G",
-    author_email="your.email@example.com",
+    author_email="nivethaga@gmail.com",
     description="A smart text cleaner that preserves important capitalization using NER",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
@@ -12,4 +12,9 @@ setup(
     packages=find_packages(),
     install_requires=["spacy"],
     python_requires=">=3.6",
+    entry_points={
+        "console_scripts": [
+            "smartcase=smartcase.cli:main",
+        ],
+    },
 )
