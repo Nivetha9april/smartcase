@@ -161,7 +161,7 @@ def main() -> None:
 
     # ── Import your clean_text function ────────────────────────────────────
     try:
-        from smartcase.core import clean_text
+        from smartcase.cleaner import clean_text
     except ImportError:
         try:
             from smartcase import clean_text
